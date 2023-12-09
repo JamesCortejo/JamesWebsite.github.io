@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url(../media/tumblr_c8540a9bf19666e692d9598dbe463f70_c61b02b4_400.gif);
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        
+        .btn {
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            border: 1px solid black;
+        }
+        
+        .btn:hover {
+            color: white;
+            background-color: black;
+            transition: 80ms ease;
+        }
+        
+        .card {
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .card .main-content {
+            width: 100%;
+        }
+        
+        .card .main-content img {
+            width: 100%;
+        }
+        
+        .card .overlay-content {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+            transition: 0.6s;
+            top: 0%;
+            left: 100%;
+            opacity: 0.6;
+        }
+        
+        .card:hover .overlay-content {
+            transform: translateX(-100%);
+        }
+        
+        .card .overlay-content p {
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 2rem;
+            letter-spacing: 1px;
+            line-height: 1.75rem;
+        }
+        
+        .card .overlay-content p span {
+            display: block;
+            letter-spacing: normal;
+            font-size: 1rem;
+            font-style: italic;
+            margin-top: 1.25rem;
+        }
+        
+        @media (max-width: 764px) {
+            .card {
+                width: 300px;
+                height: auto;
+                margin-bottom: 13px;
+            }
+            .card .overlay-content p {
+                text-align: center;
+                font-size: 10px;
+                letter-spacing: 0px;
+                line-height: 15px;
+                margin: 0.5rem;
+            }
+            .card .overlay-content p span {
+                font-size: 15px;
+                font-style: italic;
+            }
+            .container {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        
+        .col-md-4 {
+            padding: 0;
+            padding-right: 25px;
+        }
+        
+        .row {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-weight: 700; font-size: 1.7rem;" href="#">
+                <img src="../media/log.png" alt="" width="45" height="45" class="d-inline-block align-top"> James's Website
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div style="padding-left: 15px; padding-bottom: 5px;">
+                            <a class="btn btn-sm active" aria-current="page" href="../index.html">
+                                <span>Home</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div style="padding-left: 15px; padding-bottom: 5px;">
+                            <a class="btn btn-sm active" aria-current="page" href="ITBLOG.html">
+                                <span>Blog</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div style="padding-left: 15px; padding-bottom: 5px;">
+                            <a class="btn btn-sm active" aria-current="page" href="flex.html">
+                                <span>Flex</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row" style="padding: 15px;">
+            <div class="col-sm-4 d-grid">
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/1.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            At capitol grounds after practice for our PE culminating.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/2.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Front seats at the acquaintance.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/3.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Picture with the boys before the acquaintance starts.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/4.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Outfit of the night pictorial.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/5.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Laying on my hammock while enjoying the view at sabangan.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/6.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Visit from jerferson's house.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/18.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Eating jollibee after the fist acquaintance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/7.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Sunrise selfie at sabangan.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/8.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Hanging out at kape barato.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/9.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            At capitol grounds during the december avenue concert.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/10.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Picture with the boys after reading of honors in senior high school (With high honors)
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/11.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Picture with my classmates after graduation in senior high school and earning the title "Computer programming of the year"
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/12.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Hanging out with the boys at 7/11 drinking beer.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/20.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Selfie with my classmates after we arrive at the tree panting site during our CWTS activity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/13.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Bonding with my senio high school friends at RR resorts.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/14.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Picture with the boys before we left the resort.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/15.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Last picture at valencia national high school before moving to malaybalay for college.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/16.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Picture of me during my ICT immersion.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/17.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Random picture with my friends at buksu.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/21.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Picture with ranulf at tree panting site during our CWTS activity.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="main-content">
+                        <img src="../media/flex/22.jpg" alt="Batman">
+                    </div>
+                    <div class="overlay-content">
+                        <p>
+                            Icream with my classmates at 7/11
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);">
+        <div class="socials" style="text-align: center;">
+            <a href="https://web.facebook.com/james.cortejo" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCJEtX2ZEsJ9MvDDJYgLe7yA" class="fa fa-youtube"></a>
+            <a href="https://instagram.com" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
