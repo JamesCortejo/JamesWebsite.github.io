@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James's Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-image: url(../media/tumblr_pfg94z5tOh1uzwgsuo1_400.gif);
+            background-size: cover;
+        }
+        
+        .btn {
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            border: 1px solid black;
+        }
+        
+        .btn:hover {
+            color: white;
+            background-color: black;
+            transition: 80ms ease;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .btn {
+                margin-bottom: 20px;
+            }
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+        
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        
+        .blog-card {
+            padding-top: 20px;
+            margin: 0;
+        }
+        
+        .row {
+            border-radius: 25px;
+        }
+        
+        .blog-image img {
+            transition: 1s ease;
+            height: 100%;
+            width: 100%;
+            object-fit: fit;
+        }
+        
+        .blog-image img:hover {
+            -webkit-transform: rotateZ(-5deg);
+            -ms-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+            transition: 1s ease;
+        }
+        
+        .blog-body {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .blog-body p {
+            font-size: 20px;
+        }
+        
+        .display-5 {
+            background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 30px;
+        }
+        
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-weight: 700; font-size: 1.7rem;" href="#">
+                <img src="../media/log.png" alt="" width="45" height="45" class="d-inline-block align-top"> James's Website
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <div style="padding-left: 15px; padding-bottom: 5px;">
+                            <a class="btn btn-sm active" aria-current="page" href="../index.html">
+                                <span>Home</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div style="padding-left: 15px; padding-bottom: 5px;">
+                            <a class="btn btn-sm active" aria-current="page" href="ITBLOG.html">
+                                <span>Blog</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div style="padding-left: 15px; padding-bottom: 5px;">
+                            <a class="btn btn-sm active" aria-current="page" href="flex.html">
+                                <span>Flex</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="blog-card">
+            <div class="row shadow p-3 mb-5 bg-white rounded">
+                <div class="col-md-4" style="height: auto; padding: 0px;">
+                    <div class="blog-image text-center">
+                        <img class="rounded" src="../media/blog/1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8" style="padding: 0px;">
+                    <div class="blog-body" style="padding: 25px;">
+                        <div class="blog-title">
+                            <h1 class="display-5">CHAPTER I: WHAT IS COMPUTING?</h1>
+                        </div>
+                        <div class="blog-description">
+                            <p>This was the first lesson we learned in Into to computing, we learned about what commuting is and what is a computer, we also learned about the different computing defices in different eras, and lastly we learned about what
+                                computing's impact on soccirty and various industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="row shadow p-3 mb-5 bg-white rounded">
+                <div class="col-md-8" style="padding: 0px;">
+                    <div class="blog-body" style="padding: 25px; text-align: right;">
+                        <div class="blog-title">
+                            <h1 class="display-5">CHAPTER II: PROFESSIONS & CAREERS IN COMPUTING</h1>
+                        </div>
+                        <div class="blog-description">
+                            <p>On Chapter II we learned about the different professions and careers in cumputing, there are seven catigories of professions and careers in the information technology industry, the first one is programming and software development,
+                                information systems operation and management, telecommunications and networking, web and internet, computer science research, graphics and multimedia and lastly training and support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="height: auto; padding: 0px;">
+                    <div class="blog-image text-center">
+                        <img class="rounded" src="../media/blog/2.jpg" alt="" style="padding-top: 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow p-3 mb-5 bg-white rounded">
+            <div class="col-md-4" style="height: auto; padding: 0px;">
+                <div class="blog-image text-center">
+                    <img class="rounded" src="../media/blog/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-8" style="padding: 0px;">
+                <div class="blog-body" style="padding: 25px;">
+                    <div class="blog-title">
+                        <h1 class="display-5">CHAPTER III: INFORMATION PROCESSING CYCLE</h1>
+                    </div>
+                    <div class="blog-description">
+                        <p>On Chapter III we learned about the information processing cycle, we discovered the difference between data and information, the stages of data processing also the four phases of the cycle to precess inforamtion notably, input,
+                            process, storage lastly output, and we also learned about the characteristics of good information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="row shadow p-3 mb-5 bg-white rounded">
+                <div class="col-md-8" style="padding: 0px;">
+                    <div class="blog-body" style="padding: 25px;  text-align: right">
+                        <div class="blog-title">
+                            <h1 class="display-5">CHAPTER IV: INTRODUCTION TO COMPUTER SYSTEMS
+                            </h1>
+                        </div>
+                        <div class="blog-description">
+                            <p>On Chapter IV we gain an understanding of computer systems. We studied the four components in a computer system namely hardware, people ware, software and lastly dataware. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="height: auto; padding: 0px;">
+                    <div class="blog-image text-center">
+                        <img class="rounded" src="../media/blog/7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row shadow p-3 mb-5 bg-white rounded">
+            <div class="col-md-4" style="height: auto; padding: 0px;">
+                <div class="blog-image text-center">
+                    <img class="rounded" src="../media/blog/4.jpeg" alt="" style="padding-top: 87px;">
+                </div>
+            </div>
+            <div class="col-md-8" style="padding: 0px;">
+                <div class="blog-body" style="padding: 25px;">
+                    <div class="blog-title">
+                        <h1 class="display-5">CHAPTER V: BASIC CONCEPT OF COMPUTER SECURITY
+                        </h1>
+                    </div>
+                    <div class="blog-description">
+                        <p>On Chapter V we learned about the concepts of data security, classifying information, and ensuring security of personal information. We also learned about the common types of cybercrimes namely identity theft, malicious software,
+                            theft, cyber bullying and stalking, chold soliciting and abuse and hacking. We also learned about the common types of cybercriminals which are the hackers, script kiddies, crackers, white hats, black hats, grey hats, hacktivist,
+                            red hat hackers, scammers, phishers, internet stalker and lastly insiders. And the last part of this lesson we learned about the four cyber-attacks countermeasures which is network encryption, proxies, firewall and cyber liability
+                            insurance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="row shadow p-3 mb-5 bg-white rounded">
+                <div class="col-md-8" style="padding: 0px;">
+                    <div class="blog-body" style="padding: 25px;  text-align: right">
+                        <div class="blog-title">
+                            <h1 class="display-5">CHAPTER VI: BASIC HTML & CSS
+                            </h1>
+                        </div>
+                        <div class="blog-description">
+                            <p>On our last lesson Chapter VI, we learned about the basics of HTML and CSS, the first section of this lesson is the HTML versions, and we learned about the different HTML tags aslso the different CSS sytax and the three ways
+                                to insert CSS in your website, the first one is Internal CSS, Inline CSS and External CSS we also learned about how to select different css variables, and the last part of this lesson is we learned about how to make a wireframe
+                                for a website. This was the most challenging lesson among the four lessons, we were tasked to make a website and it wasn't easy to make and this is also my favourite lesson among all the rest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="height: auto; padding: 0px;">
+                    <div class="blog-image text-center">
+                        <img class="rounded" src="../media/blog/5.jpg" alt="" style="padding-top: 35px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer style="background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);">
+        <div class="socials" style="text-align: center;">
+            <a href="https://web.facebook.com/james.cortejo" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCJEtX2ZEsJ9MvDDJYgLe7yA" class="fa fa-youtube"></a>
+            <a href="https://instagram.com" class="fa fa-instagram"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>
